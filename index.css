@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo img {
+    height: 70px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    padding: 2em;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav .icon {
+    display: none;
+}
+
+
+/*============
+Home
+=============================*/
+.home{
+    background-color: #93d9eb;
+    color: #fff;
+    height: 90vh;
+}
+.home-content{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 1em;
+}
+.home-content-left {
+    width: 40%;
+}
+.home-content-left h2 {
+    font-size: 2.5rem;
+    margin: 4em 0 1em;
+
+}
+.home-content-left h2 span {
+    color: rgb(192, 192, 102);
+}
+.home-content-left p {
+    color: #ddd;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+.home-content-left button {
+    color: #fff;
+    background-color: #93d9eb;
+    border: 1px solid #fff;
+    outline: none;
+    width: 150px;
+    padding: .5em 1em;
+    margin-top: 1em;
+    border-radius: 5%;
+    font-size: 1rem;
+
+}
+.home .home-img {
+    width: 50%;
+}
+.home .home-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/*============
+About Us
+=============================*/
+.about h2 {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.about-cont {
+    display: flex;
+}
+
+.about-left {
+    width: 60%;
+    margin-top: 3em;
+    padding: 1em;
+}
+.about-left p {
+    margin: 1em 0;
+}
+.about-right {
+    max-width: 40%;
+}
+.about-right img {
+    width: 100%;
+    height: 100%;
+}
+
+/*============
+Services
+=============================*/
+.service {
+    background-color: #DDD;
+    margin-top: 2em;
+    text-align: center;
+    padding: 1em;
+}
+.service h2 {
+    padding: 2em 0;
+}
+.service-cont {
+    display: flex;
+    justify-content: space-between;
+}
+.service-card {
+    width: 30%;
+    background-color: #93d9eb;
+    border-radius: .5em;
+}
+.service-card div {
+    background-color: #e6dcdcba;
+    color: #fff;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: 1em 1em 0 0;
+    font-size: 1.5rem;
+}
+.service-card h3 {
+    color: rgb(192, 192, 102);
+    font-size: 1.5rem;
+    margin: .5em 0;
+}
+.service-card p {
+    padding: .5em;
+}
+
+/*============
+Media Quire
+=============================*/
+/* Small Screens */
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+    }
+    nav .logo {
+        width: 100%;
+    }
+    nav .logo img {
+        margin-left: -1.5em;
+    }
+    nav ul {
+        width: 100%;
+        display: none;
+    }
+    nav .active {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0.7em;
+        font-size: 2em;
+    }
+    .home-content {
+        flex-direction: column;
+    }
+    .home-content-left {
+        width: 100%;
+    }
+    .home-img {
+        display: none;
+    } 
+    .about-cont {
+        flex-direction: column;
+    }
+    .about-left {
+        width: 95%;
+        margin-top: 0;
+    }
+    .about-right {
+        max-width: 90%;
+        width: 100%;
+    }
+    .service-cont {
+        flex-direction: column;
+    }
+    .service-card {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    
+}
+
+/* Tablets Screens */
+@media (max-width: 1024px) {
+    .home-content-left h2 {
+        font-size: 2rem;
+        margin: 2em 0 1em;
+    
+    }
+}
+
